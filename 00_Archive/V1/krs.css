@@ -1,10 +1,5 @@
 body {
     background-color: #000000;
-    background-image: url("20_imgs/world.jpeg");
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-
 }
 
 /* #mainNavbar .nav-link {
@@ -19,57 +14,33 @@ body {
     color: #ea1c2c;
 } */
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* img {
+#landingHeader {
+    z-index: 1;
     position: relative;
-    width: 1920px;
-    height: auto;
-    margin: 0;
-    background-size: cover;
-
-} */
-
-.container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+    text-align: center;
+    padding-top: 40vh;
+  }
 
 #navLinks {
     font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
 
 }
 
-#mainNavbar {
-    margin: 0;
-    padding: 0;
-}
+/* .navbar-nav ul {
+    right: 500px;e
+} */
 
-div#btnHold {
-    top: 25rem;
-    transform: translate(50%, 1000%);
-    width: 65%;
-    /* text-align: center; */
-}
-/* another media query for the background pic(width: 3840 & 2560 ) */
-
-
-/* medaiquery img {
+img {
     width:650px;
     height: auto;
     margin: 0;
     background-size: cover;
     top: 20px;
 
-} */
-
-
+}
+ul {
+    margin: 0;
+}
 /* div.leftH {
     width: 50%;
     height: auto;
@@ -94,68 +65,41 @@ div#btnHold {
     transform: translate(-40%, -10%);
 } */
 
-/* .btn-group {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    text-align: center;
-    align-items: center;
-    transform: translate(-40%, -10%);
-} */
 button.btn.btn-dark a {
-    text-decoration: none;
+    position: absolute;
+    top:20em;
 }
 
-button.btn.btn-dark.sip:hover {
+button.btn.btn-dark.sin a {
+    position: absolute;
+    left: 2em;
+}
+
+button.btn.btn-dark.sip a {
+    position: absolute;
+    right: 2em;
+}
+
+button.btn.btn-dark a:hover {
 /* background-color: rgba(56, 56, 56, 0.5); */
 background-color: rgba(0, 0, 0, 0.5);
 text-decoration: none;
 border: 2px white solid;
 border-radius: 10px;
-padding-right: 50%;
+padding: 0 2px;
 text-align: center;
 }
 
 /* ==================================REFACTOR================================== */
     /* These elements are not lining up with the actual buttons so rearange the css so only one set of classes are used for the buttons */
 
-button.btn.btn-dark.sip {
-    order: 1;
+.btn.btn-dark.sip {
     background-color: transparent;
     border: none;
-    position: absolute;
-    /* top: 25rem; */
-    text-decoration: none;
-    padding-right: 50%;
-    margin: 0
-
-
-    /* display: none; */
 }
-
-button.btn.btn-dark.sin {
-    align-items: center;
-    order: 2;
+.btn.btn-dark.sin {
     background-color: transparent;
-    border: none;
-    position: relative;
-    /* left: 30rem;
-    top: 25rem; */
-    text-decoration: none;
-    padding-left: 50%;
-    margin: 0
-    /* display: none; */
 
-}
-
-button.btn.btn-dark.sin:hover {
-/* background-color: rgba(56, 56, 56, 0.5); */
-background-color: rgba(0, 0, 0, 0.5);
-text-decoration: none;
-border: 2px white solid;
-border-radius: 10px;
-padding-left: 50%;
-text-align: center;
 }
 /* ==================================REFACTOR================================== */
 
@@ -169,7 +113,6 @@ button.sip {
     display: inline;
     z-index: 1;
 } */
-
 /* div.container.btn-holder {
     width: 100%;
     height: 38px;
@@ -177,27 +120,21 @@ button.sip {
     align-items: center;
 } */
 
-h2 {
+h3 {
     color: white;
     margin-bottom: 0.25rem;
-    text-decoration: none;
 }
-h2:hover {
+h3:hover {
     color: white;
-    text-decoration: none;
 }
+/* ul.slideshowLH {
+    margin: 0;
+    padding: 0; 
+} */
 
-
-.lH {
-    /* transform: scaleX(-1); */
-    position: relative;
-    left: -39px;
-}
-
-.rH {
-    position: relative;
-    left: 335px; 
-}
+.hFlip {
+    transform: scaleX(-1);
+  }
 
 ul.slideshowLH li { 
     width: 100%;
@@ -212,32 +149,41 @@ ul.slideshowLH li {
     z-index: 0;
     animation: imageAnimation 50s linear infinite;
     /* possilby create background images instead of hardlinking them in the html file (for easier resizinzg) */
-}
+  }
   
-ul.slideshowLH li:nth-child(1) { 
-background-image: url("https://images.unsplash.com/photo-1585232004423-244e0e6904e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
-}
-
-ul.slideshowLH li:nth-child(2) { 
-background-image: url("https://images.unsplash.com/photo-1516383286093-f90be8db5d45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
-animation-delay: 10s; 
-}
+  ul.slideshowLH li:nth-child(1) { 
+    background-image: url("https://images.unsplash.com/photo-1585232004423-244e0e6904e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+  }
+  ul.slideshowLH li:nth-child(2) { 
+    background-image: url("https://images.unsplash.com/photo-1516383286093-f90be8db5d45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    animation-delay: 10s; 
+  }
 
 ul.slideshowLH{
     display: inline;
     position: relative;
     padding: 0;
-    margin: 0;
-    padding: 0; 
+}
+ul.slideshowRH{
+    display: inline;
+    position: relative;
+    padding: 0;
 }
 
-.slideshowRH ul{
-    /* display: inline;
-    position: relative; */
-    padding: 100px;
+  div.leftH {
+      padding: 0;
+      margin: 0;
+      display: inline;
+  }
+  
+  div.rightH{
+    padding: 0;
     margin: 0;
-
-
+    display: inline;
+}
+div.sign{
+display: inline;
+transform: translate(50%, 50%);
 }
 
 .front {
@@ -245,16 +191,18 @@ ul.slideshowLH{
     z-index: 1;
 }
 
+.back {
+    position: relative;
+    z-index: 0;
+}
+
 div {
     margin: 0;
     padding: 0;
-    /* width: 1920px; */
-    height: auto;
-    /* Use for media quira max-width:1300px */
+    width: 1300px;
 }
-
 body, html {
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
 };
 
