@@ -1,3 +1,9 @@
+/*
+3. SIP FORM --> ADD "FADE-IN" EFFECT ~300ms
+4. SIN FORM --> ADD "FADE-IN" EFFECT ~300ms
+*/
+
+
 body {
     background-repeat: none;
     background-size: cover;
@@ -39,10 +45,6 @@ div#background {
     height: auto;
 }
 
-div#info {
-    text-align: center;
-    margin-bottom: 10px;
-}
 #background img:nth-of-type(1) {
     animation-delay: 34s;
 }
@@ -58,6 +60,7 @@ div#info {
 #background img:nth-of-type(4) {
     animation-delay: 2s;
 }
+
 
 #background img {
     background-repeat: none;
@@ -86,23 +89,34 @@ p#foot{
     color: #8C8C8C;
     font-family: sans-serif;
 }
- 
-p#new {
-    padding-bottom: 6px;
-    margin-bottom: 0;
-    font-size: 18px;
+
+/* 
+.show {
+    opacity: 1;
+    transition: opacity 1s
 }
-p#soMedia {
-    font-size: 12px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 12px;
+
+.hide {
+    opacity: 0;
+    transition: opacity 1s
+} */
+
+/* a.fa-facebook {
+    color:  #3B5998;
+  }
+  
+a.fa-twitter {
+    color: #55ACEE;
 }
-p#welcome {
-    padding-bottom: 6px;
-    margin-bottom: 0;
-    font-size: 18px;
-}
+
+a.fa-google {
+    color: #dd4b39;
+  }
+  
+a.fa-instagram {
+color: #125688;
+} */
+
 a.fa-facebook {
     background:  #3B5998;
     color: white;
@@ -118,6 +132,19 @@ a.fa-google {
     margin: 0;
     border-radius: 5px;
   }
+/* 
+a.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 4px;
+}
+
+a.fa-instagram {
+    background: #125688;
+    color: white;
+    padding: 4px;
+} */
+
 
 a.fa-twitter {
     color: #55ACEE;
@@ -142,13 +169,14 @@ a.fa-instagram {
   
 .social-media ul{
 list-style: none;
-padding: 0 0 15px 0;
+padding: 15px 0;
 margin: 0;
 }
 
 .social-media ul li{
 display: inline-block;
 cursor: pointer;
+/* margin: 25px 15px; */
 }
 .social-media-top{
     z-index: 2;
@@ -168,38 +196,32 @@ cursor: pointer;
 .social-media-top ul li{
 display: inline-block;
 cursor: pointer;
-}
-
-
-button.car-button {
-    padding-top: 80%;
+/* margin: 25px 15px; */
 }
 #mainNavbar .nav-link:hover {
     color: #fff;
     text-decoration: underline;
 }
 
-form#signUp {
+ form#signUp {
     background-color: transparent;
     width: 18em;
     display: block;
-    padding: 1em 1em 0 1em;
+    padding: 1em 2em 0 2em;
     justify-content: center;
 
-}
+ }
 
-form#login {
+ form#login {
     background-color: transparent;
     width: 18em;
     display: block;
-    padding: 1em 1em 0 1em;
+    padding: 1em 2em 0 2em;
     justify-content: center;
-}
-
+ }
 .navbar-brand {
     font-size: 24px;
 }
-
 .container {
     margin: 0;
     padding: 0;
@@ -272,7 +294,7 @@ form#login {
 div#fp {
     text-align: center;
     margin: 0;
-    padding-top: 6px;
+    padding-top: 12px;
 
 }
 div#btnHold {
@@ -327,10 +349,8 @@ input {
     display: block;
     padding: 2px;
 }
-
 input#submit {
     padding: 4px 8px;
-    margin-top: 25px;
     font-size: 18px;
 
 }
@@ -340,11 +360,9 @@ input#submit:hover {
     color: #fff;
     font-weight: bold;
 }
-
 input:focus {
     outline-style: none;
 }
-
 input:focus::placeholder {
     color: transparent;
 }
