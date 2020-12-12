@@ -1,0 +1,143 @@
+body {
+    background-color: #000000;
+    background-image: url("20_imgs/world.jpeg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #fff;
+}
+
+div#form-sip input{
+    transform: translateX(100%);
+}
+form {
+    background-color: transparent;
+    /* display: none; */
+    border: 2px solid rgba(0, 0, 0, 0.925);
+    padding: 2em;
+    width: 18em;
+    background-color: rgba(255, 255, 255, 0.41);
+    display: block;
+}
+/* div.container div#info {
+    display: inline-block;
+} */
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#navLinks {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#mainNavbar {
+    margin: 0;
+    padding: 0;
+}
+
+/* div#info {
+    justify-content: center;
+    align-items: center;
+} */
+
+div#btnHold {
+    /* top: 25rem; */
+    /* transform: translate(50%, 1000%); */
+    transform: translateY(31em);
+    width: 100%;
+    text-align: center;
+}
+
+button.btn.btn-dark a {
+    text-decoration: none;
+}
+
+button.btn.btn-dark.sip {
+    /* background-color: transparent; */
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px #8C8C8C solid;
+    border-radius: 10px;
+    position: relative;
+    text-decoration: none;
+    margin-right: 2.5em;
+    /* transform: translateX(-40%); */
+    /* margin: 0 */
+}
+
+button.btn.btn-dark.sin {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px #8C8C8C solid;
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    margin-left: 2.5em;
+}
+
+button.btn.btn-dark.sip:hover {
+background-color: rgba(0, 0, 0, 0.5);
+text-decoration: none;
+border: 2px white solid;
+border-radius: 10px;
+}
+
+button.btn.btn-dark.sin:hover {
+background-color: rgba(0, 0, 0, 0.5);
+text-decoration: none;
+border: 2px white solid;
+border-radius: 10px;
+}
+
+input {
+    border: none;
+    box-shadow: none;
+    margin-top: 0.5em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input:focus {
+    outline-style: none;
+}
+
+h2 {
+    color: #8C8C8C;
+    margin-bottom: 0.25rem;
+    text-decoration: none;
+}
+
+h2:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+div {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+};
+
+
+/* transition for background image to:
+ 1. Fade in(CSS) upon site load
+ 2. Fade out(JS) when clicking Login/Sign Up
+ 
+ - Hover over images and and darkens with a almost transparent black layer
+ 
+ 
+ */
+ 
