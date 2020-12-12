@@ -13,15 +13,25 @@ body {
 div#form-sip input{
     transform: translateX(100%);
 }
-form {
+
+ form#signUp {
     background-color: transparent;
-    /* display: none; */
-    border: 2px solid rgba(0, 0, 0, 0.925);
-    padding: 2em;
     width: 18em;
-    background-color: rgba(255, 255, 255, 0.41);
     display: block;
+    padding: 2.5em 2em 0 2em;
+    justify-content: center;
+    /* padding: 6px 6px; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* display: none; */
+    /* transform: translateX(25%) */
+ }
+
+.formA {
+    /* display:none; */
 }
+
 /* div.container div#info {
     display: inline-block;
 } */
@@ -30,6 +40,29 @@ form {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+.popUp {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUpCotent {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.925);
+    border-radius: 10px;
+    /* transform: translate(50%,50%); */
+
 }
 
 #navLinks {
@@ -43,10 +76,6 @@ form {
     padding: 0;
 }
 
-/* div#info {
-    justify-content: center;
-    align-items: center;
-} */
 
 div#btnHold {
     /* top: 25rem; */
@@ -83,29 +112,33 @@ button.btn.btn-dark.sin {
 }
 
 button.btn.btn-dark.sip:hover {
-background-color: rgba(0, 0, 0, 0.5);
-text-decoration: none;
-border: 2px white solid;
-border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border: 2px white solid;
+    border-radius: 10px;
 }
 
 button.btn.btn-dark.sin:hover {
-background-color: rgba(0, 0, 0, 0.5);
-text-decoration: none;
-border: 2px white solid;
-border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border: 2px white solid;
+    border-radius: 10px;
 }
 
 input {
     border: none;
     box-shadow: none;
-    margin-top: 0.5em;
+    margin: 2px auto;
     border-radius: 10px;
     text-align: center;
+    display: block;
+    padding: 2px;
 }
-
 input:focus {
     outline-style: none;
+}
+input:focus::placeholder {
+    color: transparent;
 }
 
 h2 {
@@ -118,7 +151,6 @@ h2:hover {
     text-decoration: none;
     color: white;
 }
-
 
 div {
     margin: 0;
