@@ -16,11 +16,35 @@
     
 //   });
 
-function sipForm() {
-    // document.getElementById("signUp").
-    var button = document.querySelector("button");
+// function sipForm() {
+//     // document.getElementById("signUp").
+//     var button = document.querySelector("button");
 
-    button.addEventListener("click", function(){
-         document.body.classList.toggle("purple")
-        });
-    }
+//     button.addEventListener("click", function(){
+//         $( "#popUP" ).toggle(function() {
+//             alert( "First handler for .toggle() called." );
+//                 }, function() {
+//             alert( "Second handler for .toggle() called." );
+//                 });
+//         //  document.body.classList.toggle("popUp")
+//         });
+//     }
+// };
+
+// $( "#popUP" ).toggle(function() {
+//     alert( "First handler for .toggle() called." );
+// }, function() {
+//     alert( "Second handler for .toggle() called." );
+// });
+
+// var pop = document.getElementById("signUp")
+// pop.addEventListener("click", )
+
+// $( "td" ).toggle(
+//     function() {
+//         $( this ).addClass( "selected" );
+//     }, function() {
+//         $( this ).removeClass( "selected" );
+//     }
+//     );
+            
