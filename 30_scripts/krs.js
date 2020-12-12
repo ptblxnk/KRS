@@ -1,50 +1,73 @@
-// $(function() {
-  
-//     // contact form animations
-//     $("#btnHold").click(function() {
-//       $("#signUP").fadeToggle();
-//     })
-//     $(document).mouseup(function (e) {
-//       var container = $("#signUP");
-  
-//       if (!container.is(e.target) // if the target of the click isn't the container...
-//           && container.has(e.target).length === 0) // ... nor a descendant of the container
-//       {
-//           container.fadeOut();
-//       }
-//     });
-    
-//   });
+var btn = document.getElementById("sip");
+var btn2 = document.getElementById("sin");
+var x = document.querySelector(".popUp");
+var y = document.querySelector(".popIn");
 
-// function sipForm() {
-//     // document.getElementById("signUp").
-//     var button = document.querySelector("button");
+btn.addEventListener("click", function() {
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+});
 
-//     button.addEventListener("click", function(){
-//         $( "#popUP" ).toggle(function() {
-//             alert( "First handler for .toggle() called." );
-//                 }, function() {
-//             alert( "Second handler for .toggle() called." );
-//                 });
-//         //  document.body.classList.toggle("popUp")
-//         });
-//     }
-// };
+btn2.addEventListener("click", function() {
+  if (y.style.display === "flex") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "flex";
+  }
+});
 
-// $( "#popUP" ).toggle(function() {
-//     alert( "First handler for .toggle() called." );
-// }, function() {
-//     alert( "Second handler for .toggle() called." );
-// });
+//--REFACTOR WITH A "element.contains(event.target)..." approach--//
+x.addEventListener("click", function() {
+  if(event.target.id != "signUp" && event.target.id != "info" && event.target.id != "new" && event.target.id != "submit") {
+    x.style.display = "none";
+  }
+});
 
-// var pop = document.getElementById("signUp")
-// pop.addEventListener("click", )
+//--REFACTOR WITH A "element.contains(event.target)..." approach--//
+y.addEventListener("click", function() {
+  if(event.target.id != "info" && event.target.id != "info2" && event.target.id != "options" && event.target.id != "fp" && event.target.id != "login" && event.target.id != "welcome" && event.target.id != "forgot" && event.target.id != "submit") {
+    y.style.display = "none";
+  }
+});
 
-// $( "td" ).toggle(
-//     function() {
-//         $( this ).addClass( "selected" );
-//     }, function() {
-//         $( this ).removeClass( "selected" );
-//     }
-//     );
-            
+
+//-------------------THIS CAN BE REFACTORED AS WELL..MAYBE INTO AN ARRAY OR SOMETHING--------------------------------//
+
+var feed = document.getElementById("feed");
+var buy = document.getElementById("buy");
+var sell = document.getElementById("sell");
+var trade = document.getElementById("trade");
+var about = document.getElementById("about");
+
+feed.addEventListener("click", function() {
+  if(event.target.id === "feed") {
+    alert("This page is under construction.")
+  }
+})
+
+buy.addEventListener("click", function() {
+  if(event.target.id === "buy") {
+    alert("This page is under construction.")
+  }
+})
+
+sell.addEventListener("click", function() {
+  if(event.target.id === "sell") {
+    alert("This page is under construction.")
+  }
+})
+
+trade.addEventListener("click", function() {
+  if(event.target.id === "trade") {
+    alert("This page is under construction.")
+  }
+})
+
+about.addEventListener("click", function() {
+  if(event.target.id === "about") {
+    alert("This page is under construction.")
+  }
+})
