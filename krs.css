@@ -1,47 +1,227 @@
+/*
+3. SIP FORM --> ADD "FADE-IN" EFFECT ~300ms
+4. SIN FORM --> ADD "FADE-IN" EFFECT ~300ms
+*/
+
+
 body {
-    background-color: #000000;
-    background-image: url("20_imgs/world.jpeg");
     background-repeat: none;
     background-size: cover;
     background-position: center;
+    animation: fadeInBody ease 2s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInBody { 
+    0% {
+        opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
 }
 
+@keyframes fadeInAnimation { 
+    0% {
+        opacity: 1;
+      }
+      17% {
+        opacity: 1;
+      }
+      25% {
+        opacity: 0;
+      }
+      92% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+div#background {
+    width: 100%;
+    height: auto;
+}
+
+#background img:nth-of-type(1) {
+    animation-delay: 34s;
+}
+
+#background img:nth-of-type(2) {
+    animation-delay: 18s;
+}
+
+#background img:nth-of-type(3) {
+    animation-delay: 10s;
+}
+
+#background img:nth-of-type(4) {
+    animation-delay: 2s;
+}
+
+
+#background img {
+    background-repeat: none;
+    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeInAnimation ease 34s infinite;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer{
+position: absolute;
+bottom: 0;
+right: 0;
+justify-content: center;
+font-size: 0.7em;
+}
+
+p#foot{
+    margin: 0;
+    color: #8C8C8C;
+    font-family: sans-serif;
+}
+
+/* 
+.show {
+    opacity: 1;
+    transition: opacity 1s
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 1s
+} */
+
+/* a.fa-facebook {
+    color:  #3B5998;
+  }
+  
+a.fa-twitter {
+    color: #55ACEE;
+}
+
+a.fa-google {
+    color: #dd4b39;
+  }
+  
+a.fa-instagram {
+color: #125688;
+} */
+
+a.fa-facebook {
+    background:  #3B5998;
+    color: white;
+    padding: 6px 8.3px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+a.fa-google {
+    background: #dd4b39;
+    color: white;
+    padding: 6px;
+    margin: 0;
+    border-radius: 5px;
+  }
+/* 
+a.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 4px;
+}
+
+a.fa-instagram {
+    background: #125688;
+    color: white;
+    padding: 4px;
+} */
+
+
+a.fa-twitter {
+    color: #55ACEE;
+    padding: 6px 6px 0 0;
+}
+
+a.fa-instagram {
+    color: #C13584;;
+    padding-top: 6px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+.social-media{
+    width: 100%;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+  
+.social-media ul{
+list-style: none;
+padding: 15px 0;
+margin: 0;
+}
+
+.social-media ul li{
+display: inline-block;
+cursor: pointer;
+/* margin: 25px 15px; */
+}
+.social-media-top{
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    padding-left: 1.2em;
+    padding-top: 1.2em;
+}
+
+.social-media-top ul{
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+}
+    
+.social-media-top ul li{
+display: inline-block;
+cursor: pointer;
+/* margin: 25px 15px; */
+}
 #mainNavbar .nav-link:hover {
     color: #fff;
+    text-decoration: underline;
 }
-
-/* div#form-sip input{
-    transform: translateX(100%);
-} */
 
  form#signUp {
     background-color: transparent;
     width: 18em;
     display: block;
-    padding: 2.5em 2em 0 2em;
+    padding: 1em 2em 0 2em;
     justify-content: center;
-    /* padding: 6px 6px; */
-    /* width: 100%; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* display: none; */
-    /* transform: translateX(25%) */
+
  }
 
  form#login {
     background-color: transparent;
     width: 18em;
     display: block;
-    padding: 2.5em 2em 0 2em;
+    padding: 1em 2em 0 2em;
     justify-content: center;
-    /* padding: 6px 6px; */
-    /* width: 100%; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* display: none; */
-    /* transform: translateX(25%) */
  }
-
+.navbar-brand {
+    font-size: 24px;
+}
 .container {
     margin: 0;
     padding: 0;
@@ -58,6 +238,19 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 1;
+    animation: formFadeIn ease 0.4s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes formFadeIn {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
 }
 
 .popIn {
@@ -71,8 +264,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-
+    z-index: 1;
+    animation: formFadeIn ease 0.4s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 }
 
 .popUpCotent {
@@ -83,8 +278,6 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
     border: 2px solid rgba(0, 0, 0, 0.925);
     border-radius: 10px;
-    /* transform: translate(50%,50%); */
-
 }
 
 #navLinks {
@@ -100,12 +293,11 @@ body {
 
 div#fp {
     text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 0;
+    padding-top: 12px;
+
 }
 div#btnHold {
-    /* top: 25rem; */
-    /* transform: translate(50%, 1000%); */
     transform: translateY(31em);
     width: 100%;
     text-align: center;
@@ -116,15 +308,12 @@ button.btn.btn-dark a {
 }
 
 button.btn.btn-dark.sip {
-    /* background-color: transparent; */
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px #8C8C8C solid;
     border-radius: 10px;
     position: relative;
     text-decoration: none;
     margin-right: 2.5em;
-    /* transform: translateX(-40%); */
-    /* margin: 0 */
 }
 
 button.btn.btn-dark.sin {
@@ -160,6 +349,17 @@ input {
     display: block;
     padding: 2px;
 }
+input#submit {
+    padding: 4px 8px;
+    font-size: 18px;
+
+}
+
+input#submit:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: bold;
+}
 input:focus {
     outline-style: none;
 }
@@ -188,14 +388,3 @@ body, html {
     height: 100%;
     overflow: hidden;
 };
-
-
-/* transition for background image to:
- 1. Fade in(CSS) upon site load
- 2. Fade out(JS) when clicking Login/Sign Up
- 
- - Hover over images and and darkens with a almost transparent black layer
- 
- 
- */
- 
