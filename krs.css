@@ -10,9 +10,9 @@ body {
     color: #fff;
 }
 
-div#form-sip input{
+/* div#form-sip input{
     transform: translateX(100%);
-}
+} */
 
  form#signUp {
     background-color: transparent;
@@ -28,13 +28,19 @@ div#form-sip input{
     /* transform: translateX(25%) */
  }
 
-.formA {
-    /* display:none; */
-}
-
-/* div.container div#info {
-    display: inline-block;
-} */
+ form#login {
+    background-color: transparent;
+    width: 18em;
+    display: block;
+    padding: 2.5em 2em 0 2em;
+    justify-content: center;
+    /* padding: 6px 6px; */
+    /* width: 100%; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* display: none; */
+    /* transform: translateX(25%) */
+ }
 
 .container {
     margin: 0;
@@ -46,11 +52,27 @@ div#form-sip input{
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
+    top:0;
     position: absolute;
     /* display: flex; */
     display: none;
     justify-content: center;
     align-items: center;
+}
+
+.popIn {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top:0;
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
 }
 
 .popUpCotent {
@@ -76,7 +98,11 @@ div#form-sip input{
     padding: 0;
 }
 
-
+div#fp {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 div#btnHold {
     /* top: 25rem; */
     /* transform: translate(50%, 1000%); */
