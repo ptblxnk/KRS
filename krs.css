@@ -1,372 +1,369 @@
 body {
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-    animation: fadeInBody ease 2s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards;
-}
-  
-@keyframes fadeInBody { 
-    0% {
-        opacity: 0;
-    }
-    100% {
-    opacity: 1;
-    }
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+  animation: fadeInBody ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-@keyframes fadeInAnimation { 
-    0% {
-        opacity: 1;
-      }
-      17% {
-        opacity: 1;
-      }
-      25% {
-        opacity: 0;
-      }
-      92% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
+@keyframes fadeInBody {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 div#background {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 div#info {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 #background img:nth-of-type(1) {
-    animation-delay: 34s;
+  animation-delay: 34s;
 }
 
 #background img:nth-of-type(2) {
-    animation-delay: 18s;
+  animation-delay: 18s;
 }
 
 #background img:nth-of-type(3) {
-    animation-delay: 10s;
+  animation-delay: 10s;
 }
 
 #background img:nth-of-type(4) {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 #background img {
-    background-repeat: none;
-    background-size: cover;
-    background-size: contain;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: fadeInAnimation ease 34s infinite;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+  background-repeat: none;
+  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fadeInAnimation ease 34s infinite;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-footer{
-position: absolute;
-bottom: 0;
-right: 0;
-justify-content: center;
-font-size: 0.7em;
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  justify-content: center;
+  font-size: 0.7em;
 }
 
-p#foot{
-    margin: 0;
-    color: #8C8C8C;
-    font-family: sans-serif;
+p#foot {
+  margin: 0;
+  color: #8c8c8c;
+  font-family: sans-serif;
 }
- 
+
 p#new {
-    padding-bottom: 6px;
-    margin-bottom: 0;
-    font-size: 18px;
+  padding-bottom: 6px;
+  margin-bottom: 0;
+  font-size: 18px;
 }
 p#soMedia {
-    font-size: 12px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    margin-top: 12px;
+  font-size: 12px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 12px;
 }
 p#welcome {
-    padding-bottom: 6px;
-    margin-bottom: 0;
-    font-size: 18px;
+  padding-bottom: 6px;
+  margin-bottom: 0;
+  font-size: 18px;
 }
 a.fa-facebook {
-    background:  #3B5998;
-    color: white;
-    padding: 6px 8.3px;
-    margin: 0;
-    border-radius: 5px;
+  background: #3b5998;
+  color: white;
+  padding: 6px 8.3px;
+  margin: 0;
+  border-radius: 5px;
 }
 
 a.fa-google {
-    background: #dd4b39;
-    color: white;
-    padding: 6px;
-    margin: 0;
-    border-radius: 5px;
-  }
+  background: #dd4b39;
+  color: white;
+  padding: 6px;
+  margin: 0;
+  border-radius: 5px;
+}
 
 a.fa-twitter {
-    color: #55ACEE;
-    padding: 6px 6px 0 0;
+  color: #55acee;
+  padding: 6px 6px 0 0;
 }
 
 a.fa-instagram {
-    color: #C13584;;
-    padding-top: 6px;
+  color: #c13584;
+  padding-top: 6px;
 }
 
 .fa:hover {
-    opacity: 0.8;
-    text-decoration: none;
-  }
-
-.social-media{
-    width: 100%;
-    text-align: center;
-    /* margin-top: 20px; */
-}
-  
-.social-media ul{
-list-style: none;
-padding: 0 0 15px 0;
-margin: 0;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
-.social-media ul li{
-display: inline-block;
-cursor: pointer;
-}
-.social-media-top{
-    z-index: 2;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    padding-left: 1.2em;
-    padding-top: 1.2em;
+.social-media {
+  width: 100%;
+  text-align: center;
+  /* margin-top: 20px; */
 }
 
-.social-media-top ul{
-    list-style: none;
-    padding: 8px 0;
-    margin: 0;
-}
-    
-.social-media-top ul li{
-display: inline-block;
-cursor: pointer;
+.social-media ul {
+  list-style: none;
+  padding: 0 0 15px 0;
+  margin: 0;
 }
 
+.social-media ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+.social-media-top {
+  z-index: 2;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  padding-left: 1.2em;
+  padding-top: 1.2em;
+}
+
+.social-media-top ul {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.social-media-top ul li {
+  display: inline-block;
+  cursor: pointer;
+}
 
 button.car-button {
-    padding-top: 80%;
+  padding-top: 80%;
 }
 #mainNavbar .nav-link:hover {
-    color: #fff;
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 
 form#signUp {
-    background-color: transparent;
-    width: 18em;
-    display: block;
-    padding: 1em 1em 0 1em;
-    justify-content: center;
-
+  background-color: transparent;
+  width: 18em;
+  display: block;
+  padding: 1em 1em 0 1em;
+  justify-content: center;
 }
 
 form#login {
-    background-color: transparent;
-    width: 18em;
-    display: block;
-    padding: 1em 1em 0 1em;
-    justify-content: center;
+  background-color: transparent;
+  width: 18em;
+  display: block;
+  padding: 1em 1em 0 1em;
+  justify-content: center;
 }
 
 .navbar-brand {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .container {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .popUp {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    top:0;
-    position: absolute;
-    /* display: flex; */
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    animation: formFadeIn ease 0.4s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: formFadeIn ease 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 @keyframes formFadeIn {
-    0% {
+  0% {
     opacity: 0;
-    }
-    100% {
+  }
+  100% {
     opacity: 1;
-    }
+  }
 }
 
 .popIn {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    top:0;
-    position: absolute;
-    /* display: flex; */
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    animation: formFadeIn ease 0.4s;
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  /* display: flex; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+  animation: formFadeIn ease 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .popUpCotent {
-    display: flex;
-    justify-content: center;
-    width: 30%;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 2px solid rgba(0, 0, 0, 0.925);
-    border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.925);
+  border-radius: 10px;
 }
 
 #navLinks {
-    font-size: 1.5rem;
-    margin: 0;
-    padding: 0;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 #mainNavbar {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 div#fp {
-    text-align: center;
-    margin: 0;
-    padding-top: 6px;
-
+  text-align: center;
+  margin: 0;
+  padding-top: 6px;
 }
 div#btnHold {
-    transform: translateY(31em);
-    width: 100%;
-    text-align: center;
+  transform: translateY(31em);
+  width: 100%;
+  text-align: center;
 }
 
 button.btn.btn-dark a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button.btn.btn-dark.sip {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 2px #8C8C8C solid;
-    border-radius: 10px;
-    position: relative;
-    text-decoration: none;
-    margin-right: 2.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px #8c8c8c solid;
+  border-radius: 10px;
+  position: relative;
+  text-decoration: none;
+  margin-right: 2.5em;
 }
 
 button.btn.btn-dark.sin {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 2px #8C8C8C solid;
-    border-radius: 10px;
-    align-items: center;
-    position: relative;
-    text-decoration: none;
-    margin-left: 2.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px #8c8c8c solid;
+  border-radius: 10px;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  margin-left: 2.5em;
 }
 
 button.btn.btn-dark.sip:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    border: 2px white solid;
-    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  border: 2px white solid;
+  border-radius: 10px;
 }
 
 button.btn.btn-dark.sin:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    border: 2px white solid;
-    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  border: 2px white solid;
+  border-radius: 10px;
 }
 
 input {
-    border: none;
-    box-shadow: none;
-    margin: 2px auto;
-    border-radius: 10px;
-    text-align: center;
-    display: block;
-    padding: 2px;
+  border: none;
+  box-shadow: none;
+  margin: 2px auto;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  padding: 2px;
 }
 
 input#submit {
-    padding: 4px 8px;
-    margin-top: 25px;
-    font-size: 18px;
-
+  padding: 4px 8px;
+  margin-top: 25px;
+  font-size: 18px;
 }
 
 input#submit:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-weight: bold;
 }
 
 input:focus {
-    outline-style: none;
+  outline-style: none;
 }
 
 input:focus::placeholder {
-    color: transparent;
+  color: transparent;
 }
 
 h2 {
-    color: #8C8C8C;
-    margin-bottom: 0.25rem;
-    text-decoration: none;
+  color: #8c8c8c;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
 }
 
 h2:hover {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 div {
-    margin: 0;
-    padding: 0;
-    height: auto;
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 
-body, html {
-    height: 100%;
-    overflow: hidden;
-};
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
